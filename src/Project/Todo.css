@@ -92,7 +92,7 @@ form input {
     transition: background-color 200ms ease-in-out;
     width: 100%;
     background-color: #f2f3f4;
-    color: var(-primary-color);
+    --primary-color: #3498db;
 }
     
 form input:hover {
@@ -100,7 +100,7 @@ form input:hover {
     cursor: text;
 }
 
-form input:: placeholder {
+form input ::placeholder {
     color: white;
     opacity: 0.5;
 }
@@ -125,7 +125,7 @@ form button {
     border-bottom-right-radius: 15px;
     min-width: 100px;
     background-color: #5dade2;
-    color: var(-secondary-color);
+    --primary-color: #3498db;
 }
     
 span {
@@ -160,7 +160,7 @@ span {
     grid-template-columns: 1fr 0.3fr 0.3fr;
     justify-content: start;
     gap: 1rem;
-    overflow-wrap: anywhere;
+    --overflow-wrap: anywhere;
 }
     
 li span {
@@ -208,21 +208,15 @@ li span {
 }
     
 .clear-btn {
-    
     background-color: #e74c3c;
-    
     font-size: 1.6rem; padding: 1rem 2.2rem;
-    
     border-radius: 0.3rem;
-    
-    -webkit-border-radius: 0.3rem; -moz-border-radius: 0.3rem;
-    
+    -webkit-border-radius: 0.3rem; 
+    -moz-border-radius: 0.3rem;
     -ms-border-radius: 0.3rem;
-    
     -o-border-radius: 0.3rem;
 }
     
-.clear-btn:hover {
-    
+.clear-btn :hover {
     background-color: #801407; 
 }
